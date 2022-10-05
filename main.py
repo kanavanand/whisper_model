@@ -9,6 +9,10 @@ base_model = whisper.load_model("small")
 
 
 
+def load_example():
+    return inference('files/OSR_us_000_0010_8k.wav')
+
+    
 def inference(audio):
     """
     Gets audio speech recog through whisper 
@@ -16,7 +20,6 @@ def inference(audio):
     Parameters
     ----------
     audio: audio-file-name
-        audio time series. Multi-channel is supported
 
     Returns
     -------
