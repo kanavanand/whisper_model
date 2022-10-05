@@ -1,8 +1,4 @@
 import os
-try:
-    os.system("apt-get install libsndfile1-dev")
-except:
-    print("error")
 import whisper
 import ssl
 import io
@@ -10,7 +6,7 @@ import librosa
 import numpy as np
 import soundfile as sf
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 ssl._create_default_https_context = ssl._create_unverified_context
 base_model = whisper.load_model("small")
 
