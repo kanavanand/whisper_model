@@ -1,9 +1,8 @@
+import soundfile as sf
 import os
 import whisper
 import ssl
-import uuid
 import io
-import soundfile as sf
 import librosa
 import numpy as np
 
