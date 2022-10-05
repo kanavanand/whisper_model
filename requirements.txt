@@ -1,5 +1,4 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
-git+https://github.com/openai/whisper.git
 librosa
 numpy
 matplotlib
@@ -7,3 +6,4 @@ scipy
 soundfile
 SoundFile
 streamlit
+git+https://github.com/openai/whisper.git
