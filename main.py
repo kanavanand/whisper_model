@@ -1,4 +1,8 @@
 import os
+try:
+    os.system("apt-get install libsndfile1-dev")
+except:
+    print("error")
 import whisper
 import ssl
 import io
