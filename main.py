@@ -12,7 +12,7 @@ base_model = whisper.load_model("small")
 def load_example():
     return inference('files/OSR_us_000_0010_8k.wav')
 
-    
+
 def inference(audio):
     """
     Gets audio speech recog through whisper 
@@ -58,8 +58,3 @@ def infer_wave_byte( wave_bytes ):
     text = inference(filename )
     os.remove(filename)
     return text
-
-with open('files/OSR_us_000_0010_8k.wav',mode='rb') as f:
-    a= f.read()
-
-print(infer_wave_byte(a ))
