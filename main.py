@@ -1,10 +1,10 @@
-import soundfile as sf
 import os
 import whisper
 import ssl
 import io
 import librosa
 import numpy as np
+import soundfile as sf
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -63,7 +63,7 @@ def infer_wave_byte( wave_bytes ):
         Returns
         -------
         text (str) : Text out of audio
-        """
+    """
     data, samplerate = sf.read(io.BytesIO(wave_bytes))
     y_8k = librosa.resample(data, orig_sr=samplerate, target_sr=16000)
     y_8k = y_8k.astype(np.float32)
