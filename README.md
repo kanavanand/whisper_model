@@ -20,3 +20,5 @@ From byte like object
 ```
 whisper_model_gpu.infer_wave_byte(wave_bytes).value
 ```
+
+### Web-UI > https://app.daisi.io/daisies/kanav/Whisper-WebUI/app
