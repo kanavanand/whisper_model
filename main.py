@@ -42,7 +42,7 @@ def inference(audio):
     audio = whisper.pad_or_trim(audio)
 
     # make log-Mel spectrogram and move to the same device as the model
-    mel = whisper.log_mel_spectrogram(audio).to('cuda')
+    mel = whisper.log_mel_spectrogram(audio).to(base_model.device)
 
     # decode the audio
     options = whisper.DecodingOptions(fp16 = False)
