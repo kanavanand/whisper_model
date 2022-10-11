@@ -23,6 +23,9 @@ def load_example():
     return infer_wave_byte(a)
 
 
+def __version__():
+    return "0.1"
+
 
 def inference(audio):
     """
