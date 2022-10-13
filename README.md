@@ -4,12 +4,12 @@ Whisper is an automatic speech recognition model trained on 680,000 hours of mul
 
 ##### Use daisi-api to make calls
 
-Step1- Load model
+###### Step1- Load model
 ```
 import pydaisi as pyd
 whisper_model_gpu = pyd.Daisi("kanav/Whisper Model-GPU")
 ```
-Step2- Make predictions <br>
+###### Step2- Make predictions <br>
 Predictions can be made sending byte audio object or audio array (in float format ) <br>
 you can download sample audio from here - https://www.voiptroubleshooter.com/open_speech/american/OSR_us_000_0010_8k.wav
 
