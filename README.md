@@ -17,6 +17,7 @@ filename - OSR_us_000_0010_8k.wav
 
 From audio array(single dimensional)
 ```
+import whisper
 audio = whisper.load_audio('files/OSR_us_000_0010_8k.wav')
 whisper_model_gpu.inference(audio).value
 [Output]>>> The birch canoe slid on the smooth planks. Glued the sheet to the dark blue background. It is easy to tell the depth of a well. These days a chicken leg is a rare dish. Rice is often served in round bowls. The juice of lemons makes fine punch. The box was thrown beside the parked truck. The hogs were fed chopped corn and garbage.
